@@ -95,7 +95,7 @@ jobs:
 workflows:
   udagram:
     jobs:
-      - test
+      # - test
       - build
       - hold:
           filters:
