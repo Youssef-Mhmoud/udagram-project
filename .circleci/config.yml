@@ -19,12 +19,12 @@ jobs:
       - run:
           name: Unit Testing To Frontend
           command: |
-            frontend:test
+            npm run frontend:test
       # TODO: Install dependencies in the the backend API          
       - run:
           name: Integreation Test To Frontend
           command: |
-            frontend:e2e
+            npm run frontend:e2e
 
   build:
     docker:
