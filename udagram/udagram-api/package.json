@@ -13,7 +13,7 @@
     "prod": "npx tsc && node ./www/server.js",
     "clean": "rimraf -rf  www || true",
     "deploy": "npm run build && eb list && eb use udagram-api-dev && eb deploy",
-    "build": "npm run clean && npx tsc && @powershell copy -R src/config www/config &&  @powershell copy -R .elasticbeanstalk www/.elasticbeanstalk  && @powershell copy .npmrc www/.npmrc && @powershell copy package.json www/package.json && cd www && 7z a -tzip Archive.zip . && cd ..",
+    "build": "npm run clean && npx tsc &&  copy -R src/config www/config &&   copy -R .elasticbeanstalk www/.elasticbeanstalk  &&  copy .npmrc www/.npmrc &&  copy package.json www/package.json && cd www && 7z a -tzip Archive.zip . && cd ..",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
