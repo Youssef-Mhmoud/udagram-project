@@ -1,1 +1,1 @@
-aws s3 cp --recursive ./www s3://project-udacity-udagram/
+aws s3 cp --recursive ./www s3://project-udagram-123/
