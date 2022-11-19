@@ -73,7 +73,7 @@ This project contains two different test suite: unit tests and End-To-End tests(
 There are no Unit test on the back-end
 
 ## Links
-The link of `s3 bucket` : http://project-udacity-udagram.s3-website-us-east-1.amazonaws.com 
+The link of `s3 bucket` : http://project-udagram-123.s3-website-us-east-1.amazonaws.com 
 
 ### Unit Tests:
 
