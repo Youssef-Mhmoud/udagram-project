@@ -90,10 +90,8 @@ jobs:
           name: Set up Environment variables
           # TODO: Install, build, deploy in both apps
           command: |
-          environment:
             eb init udagram-api-proj --region us-east-1
-            eb use udagram-api-dev
-            eb setenv JWT_SECRET=secret-token
+            eb setenv PORT: 3000
       - run:
           name: Deploy App
           # TODO: Install, build, deploy in both apps
