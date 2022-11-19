@@ -87,6 +87,11 @@ jobs:
       - aws-cli/setup
       - checkout
       - run:
+          name: Deploy App
+          # TODO: Install, build, deploy in both apps
+          command: |
+            npm run deploy
+      - run:
           name: Set up Environment variables
           # TODO: Install, build, deploy in both apps
           command: |
@@ -98,11 +103,6 @@ jobs:
             eb setenv POSTGRES_USERNAME=postgres
             eb setenv aws_access_key_id=AKIA5PCUR33JE636CAFA
             eb setenv aws_secret_access_key=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
-      - run:
-          name: Deploy App
-          # TODO: Install, build, deploy in both apps
-          command: |
-            npm run deploy
             
 workflows:
   udagram:
